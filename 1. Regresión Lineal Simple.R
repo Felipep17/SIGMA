@@ -62,4 +62,7 @@ lines(x.nuevo$Arroz2003,pred.nuev.obs[,3],lty=3,col="red",lwd=2)
 legend(x = "bottomright",legend=c("Modelo","Intervalo de confianza 95%","Intervalo de predicción 95%"),
        col = c("black","purple","red"),lty = c(1, 2,3),pt.cex=1,
        box.lwd=0.6,text.font =15,cex=0.3)
-  
+#################### Validación de supuestos
+library(ggfortify)
+autoplot(model)
+
